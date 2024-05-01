@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 
 	"github.com/buildpacks/libcnb"
-	"github.com/paketo-buildpacks/libpak"
-	"github.com/paketo-buildpacks/libpak/bard"
-	"github.com/paketo-buildpacks/libpak/crush"
+	"github.com/initializ-buildpacks/libpak"
+	"github.com/initializ-buildpacks/libpak/bard"
+	"github.com/initializ-buildpacks/libpak/crush"
 )
 
 type Watchexec struct {
