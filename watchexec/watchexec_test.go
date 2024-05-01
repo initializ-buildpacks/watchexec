@@ -25,7 +25,7 @@ import (
 	. "github.com/onsi/gomega"
 	"github.com/sclevine/spec"
 
-	"github.com/initializ-buildpacks/libpak"
+	"github.com/paketo-buildpacks/libpak"
 )
 
 func testWatchexec(t *testing.T, context spec.G, it spec.S) {

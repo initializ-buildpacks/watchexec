@@ -18,7 +18,7 @@ jobs:
 
                 set -euo pipefail
 
-                go install -ldflags="-s -w" github.com/initializ-buildpacks/libpak/cmd/update-buildpack-dependency@latest
+                go install -ldflags="-s -w" github.com/paketo-buildpacks/libpak/cmd/update-buildpack-dependency@latest
             - uses: buildpacks/github-actions/setup-tools@v5.5.3
               with:
                 crane-version: 0.19.0

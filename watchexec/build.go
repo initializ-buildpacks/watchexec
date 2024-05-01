@@ -20,8 +20,8 @@ import (
 	"fmt"
 
 	"github.com/buildpacks/libcnb"
-	"github.com/initializ-buildpacks/libpak"
-	"github.com/initializ-buildpacks/libpak/bard"
+	"github.com/paketo-buildpacks/libpak"
+	"github.com/paketo-buildpacks/libpak/bard"
 )
 
 type Build struct {

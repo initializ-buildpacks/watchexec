@@ -19,9 +19,9 @@ package main
 import (
 	"os"
 
-	"github.com/initializ-buildpacks/libpak"
-	"github.com/initializ-buildpacks/libpak/bard"
 	"github.com/initializ-buildpacks/watchexec/v2/watchexec"
+	"github.com/paketo-buildpacks/libpak"
+	"github.com/paketo-buildpacks/libpak/bard"
 )
 
 func main() {
