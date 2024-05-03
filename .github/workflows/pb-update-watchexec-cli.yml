@@ -48,7 +48,7 @@ jobs:
                 owner: watchexec
                 repository: watchexec
                 tag_filter: cli-v(1.*)
-                token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+                token: ${{ secrets.PAT }}
             - name: Update Buildpack Dependency
               id: buildpack
               run: |
@@ -115,4 +115,4 @@ jobs:
                 labels: ${{ steps.buildpack.outputs.version-label }}, type:dependency-upgrade
                 signoff: true
                 title: Bump Watchexec CLI from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
-                token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+                token: ${{ secrets.PAT }}

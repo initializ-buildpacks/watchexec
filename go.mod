@@ -1,4 +1,4 @@
-module github.com/paketo-buildpacks/watchexec/v2
+module github.com/initializ-buildpacks/watchexec/v2
 
 go 1.20
 

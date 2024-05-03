@@ -21,7 +21,7 @@ import (
 
 	"github.com/paketo-buildpacks/libpak"
 	"github.com/paketo-buildpacks/libpak/bard"
-	"github.com/paketo-buildpacks/watchexec/v2/watchexec"
+	"github.com/initializ-buildpacks/watchexec/v2/watchexec"
 )
 
 func main() {
