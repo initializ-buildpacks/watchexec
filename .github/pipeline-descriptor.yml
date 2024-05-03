@@ -1,6 +1,6 @@
 github:
   username: ${{ secrets.JAVA_GITHUB_USERNAME }}
-  token:    ${{ secrets.PAT }}
+  token:    ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
 
 codeowners:
 - path:  "*"
@@ -9,15 +9,15 @@ codeowners:
 package:
   repositories:   ["docker.io/paketobuildpacks/watchexec","gcr.io/paketo-buildpacks/watchexec"]
   register:       true
-  registry_token: ${{ secrets.PAT }}
+  registry_token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
 
 docker_credentials:
 - registry: gcr.io
   username: _json_key
   password: ${{ secrets.GCR_PUSH_BOT_JSON_KEY }}
 - registry: docker.io
-  username: ${{ secrets.INITIALIZ_BUILDPACKS_DOCKERHUB_USERNAME }}
-  password: ${{ secrets.INITIALIZ_BUILDPACKS_DOCKERHUB_PASSWORD }}
+  username: ${{ secrets.PAKETO_BUILDPACKS_DOCKERHUB_USERNAME }}
+  password: ${{ secrets.PAKETO_BUILDPACKS_DOCKERHUB_PASSWORD }}
 
 dependencies:
 - name:            Watchexec CLI
@@ -27,17 +27,5 @@ dependencies:
     glob:       watchexec-.+-x86_64-unknown-linux-musl.tar.xz
     owner:      watchexec
     repository: watchexec
-    tag_filter: v(2.*)
-    token:      ${{ secrets.PAT }}
-
-# ARM64
-- name:            Watchexec CLI ARM64
-  id:              watchexec
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/github-release-dependency:main
-  with:
-    glob:       watchexec-.+-aarch64-unknown-linux-musl.tar.xz
-    owner:      watchexec
-    repository: watchexec
-    tag_filter: v(2.*)
-    token:      ${{ secrets.PAT }}
-    arch:    arm64
+    tag_filter: cli-v(1.*)
+    token:      ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}

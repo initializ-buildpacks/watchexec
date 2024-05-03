@@ -16,16 +16,16 @@ api = "0.7"
 
 [buildpack]
   description = "A Cloud Native Buildpack that provides the Watchexec binary tool"
-  homepage = "https://github.com/initializ-buildpacks/watchexec"
-  id = "initializ-buildpacks/watchexec"
+  homepage = "https://github.com/paketo-buildpacks/watchexec"
+  id = "paketo-buildpacks/watchexec"
   keywords = ["watchexec", "reloadable", "processes"]
-  name = "Initializ Buildpack for Watchexec"
+  name = "Paketo Buildpack for Watchexec"
   sbom-formats = ["application/vnd.syft+json", "application/vnd.cyclonedx+json"]
   version = "{{.version}}"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
-    uri = "https://github.com/initializ-buildpacks/watchexec/blob/main/LICENSE"
+    uri = "https://github.com/paketo-buildpacks/watchexec/blob/main/LICENSE"
 
 [metadata]
   include-files = ["LICENSE", "NOTICE", "README.md", "bin/build", "bin/detect", "bin/main", "buildpack.toml"]

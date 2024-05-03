@@ -1,6 +1,6 @@
+# `gcr.io/paketo-buildpacks/watchexec`
 
-
-The Initializ Buildpack for Watchexec is a Cloud Native Buildpack that provides the Watchexec binary tool to support reloadable processes.
+The Paketo Buildpack for Watchexec is a Cloud Native Buildpack that provides the Watchexec binary tool to support reloadable processes.
 
 ## Behavior
 
