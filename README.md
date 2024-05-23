@@ -1,6 +1,6 @@
 # `"watchexec"`
 
-Intializ Buildpack for Watchexec is a Cloud Native Buildpack that provides the Watchexec binary tool to support reloadable processes.
+Intializ Buildpack for Watchexec is a Cloud Native Buildpack that provides the Watchexec binary tool to support reloadable processes
 
 ## Behavior
 
