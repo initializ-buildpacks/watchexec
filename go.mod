@@ -1,6 +1,6 @@
 module github.com/initializ-buildpacks/watchexec/v2
 
-go 1.20
+go 1.22.5
 
 require (
 	github.com/buildpacks/libcnb v1.30.3
