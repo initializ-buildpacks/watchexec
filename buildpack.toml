@@ -32,16 +32,32 @@ api = "0.7"
   pre-package = "scripts/build.sh"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:watchexec:watchexec:1.20.5:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:watchexec:watchexec:2.3.0:*:*:*:*:*:*:*"]
     id = "watchexec"
     name = "Watchexec"
-    purl = "pkg:generic/watchexec@1.20.5?arch=amd64"
-    sha256 = "33e091870736833b77b103a8e7268c0ae66d756b8d71203405353eb9d40774f2"
-    source = "https://github.com/watchexec/watchexec/archive/refs/tags/cli-v1.20.5.tar.gz"
-    source-sha256 = "2bc04c7ecf58d34a48c3eeea54a76b7e621717cb93305497bea2f6399dd119c6"
-    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/watchexec/watchexec/releases/download/cli-v1.20.5/watchexec-1.20.5-x86_64-unknown-linux-musl.tar.xz"
-    version = "1.20.5"
+    purl = "pkg:generic/watchexec@2.3.0?arch=amd64"
+    sha256 = "6c4944b8878fade6b398e79134c46995d4cbcbe36ae08b07a7d16245be0073bd"
+    source = "https://github.com/watchexec/watchexec/archive/refs/tags/v2.3.0.tar.gz"
+    source-sha256 = "bf508d3662fe85294a61ab39a3fbfb0a76f79202448fb3c038a3003ae3e18245"
+    stacks = ["*"]
+    uri = "https://github.com/watchexec/watchexec/releases/download/v2.3.0/watchexec-2.3.0-x86_64-unknown-linux-musl.tar.xz"
+    version = "2.3.0"
+
+    [[metadata.dependencies.licenses]]
+      type = "Apache-2.0"
+      uri = "https://github.com/watchexec/watchexec/blob/main/LICENSE"
+
+  [[metadata.dependencies]]
+    cpes = ["cpe:2.3:a:watchexec:watchexec:2.3.0:*:*:*:*:*:*:*"]
+    id = "watchexec"
+    name = "Watchexec"
+    purl = "pkg:generic/watchexec@2.3.0?arch=arm64"
+    sha256 = "5d7c9f6b30f5ed29e9c9b2a05a60b54aa84c806ee0cd266fcae5feba976bbffc"
+    source = "https://github.com/watchexec/watchexec/archive/refs/tags/v2.3.0.tar.gz"
+    source-sha256 = "bf508d3662fe85294a61ab39a3fbfb0a76f79202448fb3c038a3003ae3e18245"
+    stacks = ["*"]
+    uri = "https://github.com/watchexec/watchexec/releases/download/v2.3.0/watchexec-2.3.0-aarch64-unknown-linux-musl.tar.xz"
+    version = "2.3.0"
 
     [[metadata.dependencies.licenses]]
       type = "Apache-2.0"
