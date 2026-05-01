@@ -53,10 +53,9 @@ func (b Build) Build(context libcnb.BuildContext) (libcnb.BuildResult, error) {
 			return libcnb.BuildResult{}, fmt.Errorf("unable to find dependency\n%w", err)
 		}
 
-		watch, be := NewWatchexec(watchExecDependency, dc)
+		watch := NewWatchexec(watchExecDependency, dc)
 
 		result.Layers = append(result.Layers, watch)
-		result.BOM.Entries = append(result.BOM.Entries, be)
 	}
 
 	return result, nil
